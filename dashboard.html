@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Uchar team</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Uchar Team!</h1>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+    </header>
+    <main class="main">
+      <ul class="box box-course">
+        <!-- <li class="list">
+          <h1>course</h1>
+          <ul class="list_ul">
+            <li class="list_ul-li">subcourse</li>
+            <li class="list_ul-li">subcourse</li>
+            <li class="list_ul-li">subcourse</li>
+          </ul>
+        </li> -->
+      </ul>
+      <ul class="box box-teachers">
+        <!-- <li class="list">
+          <h1>course</h1>
+          <ul class="list_ul">
+            <li class="list_ul-li">teacher</li>
+            <li class="list_ul-li">teacher</li>
+            <li class="list_ul-li">teacher</li>
+          </ul>
+        </li> -->
+      </ul>
+      <ul class="box box-students">
+        <!-- <li class="list">
+          <h1>group</h1>
+          <ul class="list_ul">
+            <li class="list_ul-li">student</li>
+            <li class="list_ul-li">student</li>
+            <li class="list_ul-li">student</li>
+          </ul>
+        </li> -->
+      </ul>
+    </main>
+    <footer class="footer">Footer</footer>
+
+    <!-- COURSE ADD PUT DELETE -->
+    <div class="modal-teacher js-modal-form-course">
+      <div class="modal-teacher_body">
+        <span class="modal-course_x modal-teacher_x">X</span>
+        <h1 class="moddal-course-title">course</h1>
+        <ul>
+          <li>
+            <h1>ADD</h1>
+            <form class="form-course-post">
+              <input
+                class="input-course-name"
+                type="text"
+                placeholder="Course name"
+                required
+              />
+              <input
+                class="input-course-price"
+                type="number"
+                placeholder="Course price"
+                required
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </li>
+          <li>
+            <h1>CHANGE</h1>
+            <form class="form-course-put">
+              <input
+                class="input-course-name-put"
+                type="text"
+                placeholder="Course name"
+              />
+              <input
+                class="input-course-price-put"
+                type="number"
+                placeholder="Course price"
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </li>
+          <li>
+            <h1>DELETE</h1>
+            <button class="form-course-delete">DELETE</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STUDENT ADD -->
+    <div class="modal-teacher js-student-modal">
+      <div class="modal-teacher_body">
+        <span class="modal-teacher_x js-student_x">X</span>
+        <h1 class="modal-student-groupname">group name</h1>
+        <ul>
+          <li>
+            <h1>ADD</h1>
+            <form class="form-student-post">
+              <input
+                class="input-student-fname-post"
+                type="text"
+                placeholder="Student First Name"
+                required
+              />
+              <input
+                class="input-student-lname-post"
+                type="text"
+                placeholder="Student Last Name"
+                required
+              />
+              <input
+                class="input-student-pay-post"
+                type="number"
+                placeholder="Student Pay"
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- STUDENT PUT DELETE -->
+    <div class="modal-teacher js-student-modal-put">
+      <div class="modal-teacher_body">
+        <span class="modal-teacher_x js-student_x-put">X</span>
+        <h1 class="modal-student-groupname-put">group name</h1>
+        <ul>
+          <li>
+            <h1>CHANGE</h1>
+            <form class="form-student-put">
+              <input
+                class="input-student-fname-put"
+                type="text"
+                placeholder="Student First Name"
+              />
+              <input
+                class="input-student-lname-put"
+                type="text"
+                placeholder="Student Last Name"
+              />
+              <input
+                class="input-student-pay-put"
+                type="number"
+                placeholder="Student Pay"
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </li>
+          <li>
+            <h1>DELETE</h1>
+            <button class="form-student-delete">DELETE</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./script/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background: #333;
+  color: #fff;
+}
+.header {
+  text-transform: uppercase;
+  font-weight: 300;
+  background: #fff;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid gold;
+}
+.footer {
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+  width: 100%;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-top: 2px solid gold;
+}
+.box {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.list {
+  max-width: 250px;
+  width: 100%;
+  background: gold;
+  color: red;
+}
+.list h1 {
+  background: green;
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.list_ul-li {
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 18px;
+  list-style: none;
+}
+.list_ul-li:hover {
+  background: #333;
+  color: gold;
+}
+.modal-teacher,
+.modal-group {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 215, 0, 0.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: scale(0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.modal-active {
+  transform: scale(1);
+  transition: all 0.4s;
+  visibility: visible;
+  opacity: 1;
+}
+.modal-teacher_body,
+.modal-group_body {
+  width: 90%;
+  height: 90%;
+  background: #fff;
+  color: #333;
+  padding-top: 40px;
+  position: relative;
+}
+.modal-teacher_body h1 {
+  text-align: center;
+}
+.teacher-box,
+.group-list_ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.teacher-list {
+  width: 100%;
+}
+.teacher-list h1 {
+  background: gold;
+  padding: 5px;
+}
+.teacher-list-ul {
+  list-style: none;
+}
+.teacher-list-li {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.teacher-list-li:hover {
+  background: #333;
+  color: gold;
+}
+.modal-teacher_x,
+.modal-group_x {
+  background: red;
+  color: #fff;
+  padding: 2px 6px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal-group_body h1 {
+  text-align: center;
+}
+.group-list_li {
+  background: gold;
+  width: 100%;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.group-list_ul:hover .group-list_li {
+  background: #fff;
+  color: gold;
+}
+.group-list_ul {
+  margin-top: 0;
+}
+.group-list:first-child .group-list_ul .group-list_li {
+  background: rgb(4, 253, 4);
+  color: #fff;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.group-box {
+  list-style: none;
+}
